@@ -1,3 +1,7 @@
+$(function(){
+    console.log('DOM loaded');
+});
+
 var span = $("span");
     span.each(function(index, element) {
 
@@ -13,6 +17,7 @@ var paragraphs = $('p');
         $(element).append(button)
 
     });
+
 $('button').click(function(){
     alert($(this).attr("data-tmp"));
 });
